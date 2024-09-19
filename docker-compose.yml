@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  postegres-db:
+    image: postgres:15.4
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ./postegres:/var/lib/postegresql/data
+    ports:
+      - 5432:5432
