@@ -2,7 +2,6 @@ import { QuantitySelector, Title } from "@/components";
 import { initialData } from "@/seed/seed";
 import Image from "next/image";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 
 const productsInCart = [
   initialData.products[0],
@@ -10,7 +9,7 @@ const productsInCart = [
   initialData.products[2],
 ]
 
-export default function() {
+export default function CartPage() {
 
   // if(productsInCart.length === 0){
   //   redirect('/empty')
