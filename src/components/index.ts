@@ -15,3 +15,6 @@ export * from './product/quantity-selector/QuantitySelector'
 export * from './product/slideshow/ProductSlideShow'
 export * from './product/slideshow/ProductMobileSlideShow'
 export * from './product/stock-label/StockLabel'
+
+//Provider
+export * from './provider/Provider'
